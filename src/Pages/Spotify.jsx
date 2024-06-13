@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Spotify() {
   return (
-    <div>
+    <div className="spotify">
       <h1 className="heading-style">My Favorite Track (lately) 🎧</h1>
       <iframe
         style={{ borderRadius: "12px" }}

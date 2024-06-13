@@ -4,11 +4,15 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+li {
+  padding-bottom: 8px;
+}
+
 body {
   max-width: 768px;
   margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .nav {
@@ -23,14 +27,18 @@ body {
 
 nav > p {
   padding-right: 20px;
-  font-size: large;
-  font-weight: 400;
 }
 
 .heading-style {
   font-weight: 550;
-  height: 30px;
+  height: 1px;
   padding-bottom: 35px;
+}
+
+.p-style {
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.5em;
 }
 
 .row {
@@ -74,6 +82,31 @@ a#github-link:hover {
   color: #555555;
 }
 
-.content {
-  margin-bottom: 6em;
+hr {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.toggle-header {
+  padding-bottom: 12px;
+}
+
+.toggle-button,
+.toggle-button-transform {
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid black;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.toggle-button {
+  transform: rotate(-90deg);
+}
+
+.toggle-button-transform {
+  transform: rotate(0deg);
 }

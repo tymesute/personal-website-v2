@@ -5,7 +5,7 @@ export default function NavBar() {
     <header>
       <nav className="nav">
         <p>Home</p>
-        <p>About</p>
+        <p>Projects</p>
         <p>Contact</p>
       </nav>
     </header>
