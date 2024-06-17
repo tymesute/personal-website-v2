@@ -7,12 +7,11 @@
 li {
   padding-bottom: 8px;
 }
-
 body {
   max-width: 768px;
   margin: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .nav {
@@ -83,12 +82,15 @@ a#github-link:hover {
 }
 
 hr {
-  margin-top: 40px;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 
 .toggle-header {
   padding-bottom: 12px;
+}
+.Collapsible__contentInner {
+  padding-bottom: 15px;
 }
 
 .toggle-button,

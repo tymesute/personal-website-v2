@@ -12,7 +12,7 @@ export default function Projects() {
   return (
     <div>
       <h1 className="heading-style">Projects/Experience 💻</h1>
-      <p style={{ fontStyle: "italic" }}>Experience</p>
+      <p style={{ marginBottom: "10px", fontStyle: "italic" }}>Experience 🔨</p>
 
       <Collapsible
         className="toggle-header"
@@ -28,24 +28,34 @@ export default function Projects() {
         }
         open={isOpen1}
       >
-        <ul>
-          <li>
-            Developed an internal tool to automate review/QA processes for Git
-            MR’s, ensuring necessary checks in Jira tickets
-          </li>
-          <li>
-            Integrated a Slack bot with Jira using Python and Jira’s API for
-            ticket management and automated responses.
-          </li>
-          <li>
-            Migrated the bot from VM to PC, using Docker and container services,
-            and updated it to GPT-4o
-          </li>
-          <li>
-            Secured credentials with Vault and ensured continuous functionality
-            and interactions with Jira boards.
-          </li>
-        </ul>
+        {
+          // make this into its own class
+        }
+        <div className="row">
+          <ul style={{ width: "60%" }}>
+            <li>
+              Developed an internal tool to automate review/QA processes for Git
+              MR’s, ensuring necessary checks in Jira tickets
+            </li>
+            <li>
+              Integrated a Slack bot with Jira using Python and Jira’s API for
+              ticket management and automated responses.
+            </li>
+            <li>
+              Migrated the bot from VM to PC, using Docker and container
+              services, and updated it to GPT-4o
+            </li>
+            <li>
+              Secured credentials with Vault and ensured continuous
+              functionality and interactions with Jira boards.
+            </li>
+          </ul>
+
+          <img
+            src="./src/assets/agoda1.JPG"
+            style={{ paddingTop: "15px", width: "38%" }}
+          />
+        </div>
       </Collapsible>
 
       <Collapsible
@@ -75,7 +85,11 @@ export default function Projects() {
         </ul>
       </Collapsible>
 
-      <p style={{ paddingTop: "5px", fontStyle: "italic" }}>Projects</p>
+      <p
+        style={{ paddingTop: "5px", marginBottom: "10px", fontStyle: "italic" }}
+      >
+        Projects 🗒️
+      </p>
       <Collapsible
         className="toggle-header"
         trigger={

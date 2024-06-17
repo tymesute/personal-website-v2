@@ -1,5 +1,6 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 export default function Content() {
   const [text] = useTypewriter({
@@ -20,11 +21,11 @@ export default function Content() {
       </h1>
 
       <div className="row">
-        <div style={{ width: "60%" }}>
+        <div style={{ width: "100%" }}>
           <p
             className="p-style"
             style={{
-              paddingBottom: "10px",
+              paddingBottom: "20px",
             }}
           >
             I'm a rising sophomore from Bangkok, Thailand 🇹🇭 studying Computer
@@ -32,6 +33,22 @@ export default function Content() {
             engineer intern at Agoda for Summer 2024. I love playing guitar,
             basketball, and going to the gym.
           </p>
+
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+          >
+            {
+              // implement mapping to image: https://cedricdelpoux.github.io/react-responsive-masonry/
+            }
+            <Masonry gutter="10px">
+              <img src={"./src/assets/tyme-pic2.png"} />
+              <img src={"./src/assets/IMG_4573.JPG"} />
+              <img src={"./src/assets/IMG_5538.jpg"} />
+              <img src={"./src/assets/IMG_6785.JPG"} />
+              <img src={"./src/assets/IMG_9842.JPG"} />
+              <img src={"./src/assets/IMG_7523.JPG"} />
+            </Masonry>
+          </ResponsiveMasonry>
 
           <div className="row-logo">
             <a
@@ -79,7 +96,9 @@ export default function Content() {
           </div>
         </div>
 
-        <img src={"./src/assets/tyme-pic2.png"} style={{ width: "38%" }} />
+        {
+          // <img src={"./src/assets/tyme-pic2.png"} style={{ width: "38%" }} />
+        }
       </div>
     </div>
   );
