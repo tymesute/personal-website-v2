@@ -11,8 +11,8 @@ export default function Projects() {
 
   return (
     <div>
-      <h1 className="heading-style">Projects/Experience 💻</h1>
-      <p style={{ marginBottom: "10px", fontStyle: "italic" }}>Experience 🔨</p>
+      <h1 className="heading-style">💻 Projects/Experience</h1>
+      <p style={{ marginBottom: "10px", fontStyle: "italic" }}>Experience</p>
 
       <Collapsible
         className="toggle-header"
@@ -32,7 +32,7 @@ export default function Projects() {
           // make this into its own class
         }
         <div className="row">
-          <ul style={{ width: "60%" }}>
+          <ul style={{ width: "58%" }}>
             <li>
               Developed an internal tool to automate review/QA processes for Git
               MR’s, ensuring necessary checks in Jira tickets
@@ -51,10 +51,9 @@ export default function Projects() {
             </li>
           </ul>
 
-          <img
-            src="./src/assets/agoda1.JPG"
-            style={{ paddingTop: "15px", width: "38%" }}
-          />
+          <div className="image-container">
+            <img src="./src/assets/agoda1.JPG" className="fixed-width-image" />
+          </div>
         </div>
       </Collapsible>
 
@@ -88,7 +87,7 @@ export default function Projects() {
       <p
         style={{ paddingTop: "5px", marginBottom: "10px", fontStyle: "italic" }}
       >
-        Projects 🗒️
+        Projects
       </p>
       <Collapsible
         className="toggle-header"

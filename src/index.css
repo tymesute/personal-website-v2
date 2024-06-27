@@ -8,7 +8,7 @@ li {
   padding-bottom: 8px;
 }
 body {
-  max-width: 768px;
+  max-width: 750px;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -83,14 +83,25 @@ a#github-link:hover {
 
 hr {
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .toggle-header {
   padding-bottom: 12px;
 }
 .Collapsible__contentInner {
-  padding-bottom: 15px;
+  padding-bottom: 30px;
+}
+
+.image-container {
+  width: 38%;
+  padding-top: 15px;
+  flex-shrink: 0; /* Prevents shrinking */
+}
+
+.fixed-width-image {
+  width: 100%;
+  height: auto; /* Keeps aspect ratio */
 }
 
 .toggle-button,

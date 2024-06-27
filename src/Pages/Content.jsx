@@ -21,11 +21,11 @@ export default function Content() {
       </h1>
 
       <div className="row">
-        <div style={{ width: "100%" }}>
+        <div>
           <p
             className="p-style"
             style={{
-              paddingBottom: "20px",
+              paddingBottom: "35px",
             }}
           >
             I'm a rising sophomore from Bangkok, Thailand 🇹🇭 studying Computer
@@ -34,66 +34,22 @@ export default function Content() {
             basketball, and going to the gym.
           </p>
 
-          <ResponsiveMasonry
-            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
-          >
+          <ResponsiveMasonry columnsCountBreakPoints={{ 750: 2, 900: 3 }}>
             {
               // implement mapping to image: https://cedricdelpoux.github.io/react-responsive-masonry/
             }
             <Masonry gutter="10px">
               <img src={"./src/assets/tyme-pic2.png"} />
-              <img src={"./src/assets/IMG_4573.JPG"} />
+              <img src={"./src/assets/IMG_4923.JPG"} />
+              <img src={"./src/assets/IMG_7072.JPG"} />
               <img src={"./src/assets/IMG_5538.jpg"} />
+              <img src={"./src/assets/IMG_9844.JPG"} />
+              <img src={"./src/assets/mocha1.png"} />
               <img src={"./src/assets/IMG_6785.JPG"} />
-              <img src={"./src/assets/IMG_9842.JPG"} />
-              <img src={"./src/assets/IMG_7523.JPG"} />
+              <img src={"./src/assets/IMG_4836.JPG"} />
+              <img src={"./src/assets/friends1.png"} />
             </Masonry>
           </ResponsiveMasonry>
-
-          <div className="row-logo">
-            <a
-              id="insta-link"
-              href="https://www.instagram.com/tymesute/"
-              target="_blank"
-            >
-              <img
-                src="./src/assets/instagram2.svg"
-                alt="ig-logo"
-                className="row-logo-img"
-              />
-              Instagram
-            </a>
-          </div>
-
-          <div className="row-logo">
-            <a
-              id="linkedin-link"
-              href="https://www.linkedin.com/in/tsuteesopon/"
-              target="_blank"
-            >
-              <img
-                src="./src/assets/linkedin.svg"
-                alt="linkedin-logo"
-                className="row-logo-img"
-              />
-              LinkedIn
-            </a>
-          </div>
-
-          <div className="row-logo">
-            <a
-              id="github-link"
-              href="https://github.com/Tymeee"
-              target="_blank"
-            >
-              <img
-                src="./src/assets/github.svg"
-                alt="github-logo"
-                className="row-logo-img"
-              />
-              Github
-            </a>
-          </div>
         </div>
 
         {
