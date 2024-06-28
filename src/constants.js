@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-import Collapsible from "react-collapsible";
-import ProjectDesc from "./ProjectDesc";
+import { useState } from "react";
 
-export default function Projects() {
+const constants = () => {
   const [isOpen1, setIsOpen1] = useState(true);
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(true);
@@ -65,17 +63,7 @@ export default function Projects() {
         "Designed and developed a live public message board for a university Computer Science club",
         "Integrated Google user authentication utilizing Cloud Firestore and back-end with Firebase",
         "Implemented a banning feature for the usage of profanity through a profanity-filter API",
-        <>
-          Github:{" "}
-          <a
-            href="https://github.com/Tymeee/code4community"
-            style={{ textDecoration: "underline" }}
-          >
-            link
-          </a>
-        </>,
       ],
-      descriptionClass: "description-ul-full",
       isOpen: isOpen4,
       setIsOpen: setIsOpen4,
     },
@@ -86,69 +74,12 @@ export default function Projects() {
         "Integrated Google user authentication utilizing Cloud Firestore and back-end with Firebase",
         "Implemented a banning feature for the usage of profanity through a profanity-filter API",
       ],
-      descriptionClass: "description-ul-full",
       isOpen: isOpen5,
       setIsOpen: setIsOpen5,
     },
-    {
-      title: "Covid19TH",
-      descriptions: [
-        "Developed a COVID-19 case tracker app monitoring infected, recovered, hospitalized, and death rates in Thailand",
-        "Optimized JSON data from the Ministry of Public Health of Thailand’s public API into live dashboards",
-        "Won semi-finalist award at Thailand’s National Software Contest (NSC) 2021",
-        <>
-          Github:{" "}
-          <a
-            href="https://github.com/Tymeee/Covid19TH"
-            style={{ textDecoration: "underline" }}
-          >
-            link
-          </a>
-        </>,
-      ],
-      imageUrl: "./src/assets/covid19th.png",
-      isOpen: isOpen6,
-      setIsOpen: setIsOpen6,
-    },
   ];
 
-  return (
-    <div>
-      <h1 className="heading-style">💻 Projects/Experience</h1>
-      <p style={{ marginBottom: "10px", fontStyle: "italic" }}>Experience</p>
+  return { experiences, projects, isOpen6, setIsOpen6 };
+};
 
-      <div>
-        {experiences.map((experience, index) => (
-          <ProjectDesc
-            key={index}
-            title={experience.title}
-            descriptions={experience.descriptions}
-            imageUrl={experience.imageUrl}
-            isOpen={experience.isOpen}
-            setIsOpen={experience.setIsOpen}
-          />
-        ))}
-      </div>
-
-      <p
-        style={{ paddingTop: "5px", marginBottom: "10px", fontStyle: "italic" }}
-      >
-        Projects
-      </p>
-
-      <div>
-        {projects.map((project, index) => (
-          <ProjectDesc
-            key={index}
-            title={project.title}
-            descriptions={project.descriptions}
-            imageUrl={project.imageUrl}
-            descriptionClass={project.descriptionClass}
-            isOpen={project.isOpen}
-            setIsOpen={project.setIsOpen}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
+export default constants;

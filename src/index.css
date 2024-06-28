@@ -4,9 +4,6 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-li {
-  padding-bottom: 8px;
-}
 body {
   max-width: 750px;
   margin: auto;
@@ -83,18 +80,35 @@ a#github-link:hover {
 
 hr {
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
-.toggle-header {
+.description-ul {
+  width: 62%;
+}
+
+.description-ul-full {
+  width: 100%;
+}
+
+li {
+  padding-bottom: 8px;
+}
+
+.Collapsible__contentInner {
   padding-bottom: 12px;
 }
-.Collapsible__contentInner {
-  padding-bottom: 30px;
+
+.Collapsible__contentOuter {
+  padding-bottom: 12px;
+}
+
+.Collapsible__trigger {
+  font-weight: 550;
 }
 
 .image-container {
-  width: 38%;
+  width: 36%;
   padding-top: 15px;
   flex-shrink: 0; /* Prevents shrinking */
 }

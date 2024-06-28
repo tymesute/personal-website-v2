@@ -15,6 +15,7 @@ function App() {
       <Projects />
       <hr className="hr" />
       <Spotify />
+      <hr className="hr" />
     </>
   );
 }
