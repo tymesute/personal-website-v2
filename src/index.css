@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -11,17 +15,19 @@ body {
   padding-right: 20px;
 }
 
+hr {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
 .nav {
   display: flex;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
-.nav-title {
-  margin-right: auto;
-}
-
-nav > p {
+nav > a {
   padding-right: 20px;
 }
 
@@ -48,7 +54,7 @@ nav > p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .row-logo-img {
@@ -78,13 +84,8 @@ a#github-link:hover {
   color: #555555;
 }
 
-hr {
-  margin-top: 50px;
-  margin-bottom: 35px;
-}
-
 .description-ul {
-  width: 62%;
+  width: 72%;
 }
 
 .description-ul-full {
@@ -108,7 +109,7 @@ li {
 }
 
 .image-container {
-  width: 36%;
+  width: 20%;
   padding-top: 15px;
   flex-shrink: 0; /* Prevents shrinking */
 }

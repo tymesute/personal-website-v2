@@ -5,6 +5,8 @@ import NavBar from "./Pages/NavBar";
 import Content from "./Pages/Content";
 import Spotify from "./Pages/Spotify";
 import Projects from "./Pages/Projects";
+import Contacts from "./Pages/Contacts";
+import Footer from "./Pages/Footer";
 
 function App() {
   return (
@@ -16,6 +18,9 @@ function App() {
       <hr className="hr" />
       <Spotify />
       <hr className="hr" />
+      <Contacts />
+      <hr className="hr" style={{ marginTop: "10px", marginBottom: "10px" }} />
+      <Footer />
     </>
   );
 }

@@ -4,7 +4,7 @@ import ProjectDesc from "./ProjectDesc";
 
 export default function Projects() {
   const [isOpen1, setIsOpen1] = useState(true);
-  const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(true);
   const [isOpen3, setIsOpen3] = useState(true);
   const [isOpen4, setIsOpen4] = useState(false);
   const [isOpen5, setIsOpen5] = useState(false);
@@ -12,26 +12,35 @@ export default function Projects() {
 
   const experiences = [
     {
-      title: "Software Engineer, Agoda (Booking Holdings)",
+      title: "Software Engineer - Agoda",
       descriptions: [
         "Developed an internal tool to automate review/QA processes for Git MR’s, ensuring necessary checks in Jira tickets",
         "Integrated a Slack bot with Jira using Python and Jira’s API for ticket management and automated responses.",
         "Migrated the bot from VM to PC, using Docker and container services, and updated it to GPT-4",
         "Secured credentials with Vault and ensured continuous functionality and interactions with Jira boards.",
       ],
-      imageUrl: "./src/assets/agoda1.JPG",
+      imageUrl: "./src/assets/agoda.png",
       isOpen: isOpen1,
       setIsOpen: setIsOpen1,
     },
     {
-      title: "iOS Software Engineer, Chulalongkorn University",
+      title: "iOS Software Engineer - AIMET",
       descriptions: [
         "Worked on the frontend team for a medical diagnosis iOS application (cognitive screening test) to be used by hospitals in Thailand nationwide.",
         "Implemented UX/UI design from Figma to mobile interface with Swift/SwiftUI using MVVM",
         "Facilitated medical practitioners and doctors at King Chulalongkorn hospital to conduct field testing on over 40+ patients",
         "Participated in Agile development of project timelines, requirements design, documentation, and testing",
+        <>
+          Learn more{" "}
+          <a
+            href="https://aimet.tech/en/about-us/"
+            style={{ textDecoration: "underline" }}
+          >
+            here
+          </a>
+        </>,
       ],
-      imageUrl: "./src/assets/c2fit.jpg",
+      imageUrl: "./src/assets/aimet.jpeg",
       isOpen: isOpen2,
       setIsOpen: setIsOpen2,
     },
@@ -46,12 +55,12 @@ export default function Projects() {
         "Collaborated with Apple Southeast Asia’s marketing team to improve user engagement on App Store",
         "Integrated visionOS support at Apple Vision Developer Lab in the New York City office",
         <>
-          Download here:{" "}
+          Download WithU on the App Store{" "}
           <a
             href="https://apps.apple.com/th/app/withu/id1634761458"
             style={{ textDecoration: "underline" }}
           >
-            link
+            here
           </a>
         </>,
       ],
@@ -114,7 +123,9 @@ export default function Projects() {
 
   return (
     <div>
-      <h1 className="heading-style">💻 Projects/Experience</h1>
+      <h1 id="projects" className="heading-style">
+        Projects/Experience{" "}
+      </h1>
       <p style={{ marginBottom: "10px", fontStyle: "italic" }}>Experience</p>
 
       <div>

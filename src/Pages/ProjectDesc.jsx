@@ -19,6 +19,7 @@ export default function ProjectDesc({
               isOpen ? "toggle-button-transform" : "toggle-button"
             }`}
           ></span>
+
           {title}
         </div>
       }
