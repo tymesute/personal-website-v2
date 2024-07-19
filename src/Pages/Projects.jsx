@@ -4,7 +4,7 @@ import ProjectDesc from "./ProjectDesc";
 
 export default function Projects() {
   const [isOpen1, setIsOpen1] = useState(true);
-  const [isOpen2, setIsOpen2] = useState(true);
+  const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(true);
   const [isOpen4, setIsOpen4] = useState(false);
   const [isOpen5, setIsOpen5] = useState(false);
@@ -12,7 +12,7 @@ export default function Projects() {
 
   const experiences = [
     {
-      title: "Software Engineer - Agoda",
+      title: "Software Engineer - Agoda ✈️",
       descriptions: [
         "Developed an internal tool to automate review/QA processes for Git MR’s, ensuring necessary checks in Jira tickets",
         "Integrated a Slack bot with Jira using Python and Jira’s API for ticket management and automated responses.",
@@ -24,11 +24,11 @@ export default function Projects() {
       setIsOpen: setIsOpen1,
     },
     {
-      title: "iOS Software Engineer - AIMET",
+      title: "iOS Software Engineer - AIMET 🤖",
       descriptions: [
         "Worked on the frontend team for a medical diagnosis iOS application (cognitive screening test) to be used by hospitals in Thailand nationwide.",
         "Implemented UX/UI design from Figma to mobile interface with Swift/SwiftUI using MVVM",
-        "Facilitated medical practitioners and doctors at King Chulalongkorn hospital to conduct field testing on over 40+ patients",
+        "Facilitated medical practitioners and doctors at King Chulalongkorn hospital to conduct field testing on over 15+ patients",
         "Participated in Agile development of project timelines, requirements design, documentation, and testing",
         <>
           Learn more{" "}
@@ -69,6 +69,26 @@ export default function Projects() {
       setIsOpen: setIsOpen3,
     },
     {
+      title: "Covid19TH 🩺",
+      descriptions: [
+        "Developed a COVID-19 case tracker app monitoring infected, recovered, hospitalized, and death rates in Thailand",
+        "Optimized JSON data from the Ministry of Public Health of Thailand’s public API into live dashboards",
+        "Won semi-finalist award at Thailand’s National Software Contest (NSC) 2021",
+        <>
+          Github:{" "}
+          <a
+            href="https://github.com/Tymeee/Covid19TH"
+            style={{ textDecoration: "underline" }}
+          >
+            link
+          </a>
+        </>,
+      ],
+      imageUrl: "./src/assets/covid19th.png",
+      isOpen: isOpen6,
+      setIsOpen: setIsOpen6,
+    },
+    {
       title: "Google Public Message Board",
       descriptions: [
         "Designed and developed a live public message board for a university Computer Science club",
@@ -89,7 +109,7 @@ export default function Projects() {
       setIsOpen: setIsOpen4,
     },
     {
-      title: "DAO4DOGS",
+      title: "DAO4DOGS 🐶",
       descriptions: [
         "Designed and developed a live public message board for a university Computer Science club",
         "Integrated Google user authentication utilizing Cloud Firestore and back-end with Firebase",
@@ -98,26 +118,6 @@ export default function Projects() {
       descriptionClass: "description-ul-full",
       isOpen: isOpen5,
       setIsOpen: setIsOpen5,
-    },
-    {
-      title: "Covid19TH",
-      descriptions: [
-        "Developed a COVID-19 case tracker app monitoring infected, recovered, hospitalized, and death rates in Thailand",
-        "Optimized JSON data from the Ministry of Public Health of Thailand’s public API into live dashboards",
-        "Won semi-finalist award at Thailand’s National Software Contest (NSC) 2021",
-        <>
-          Github:{" "}
-          <a
-            href="https://github.com/Tymeee/Covid19TH"
-            style={{ textDecoration: "underline" }}
-          >
-            link
-          </a>
-        </>,
-      ],
-      imageUrl: "./src/assets/covid19th.png",
-      isOpen: isOpen6,
-      setIsOpen: setIsOpen6,
     },
   ];
 
@@ -141,11 +141,7 @@ export default function Projects() {
         ))}
       </div>
 
-      <p
-        style={{ paddingTop: "5px", marginBottom: "10px", fontStyle: "italic" }}
-      >
-        Projects
-      </p>
+      <p style={{ marginBottom: "10px", fontStyle: "italic" }}>Projects</p>
 
       <div>
         {projects.map((project, index) => (

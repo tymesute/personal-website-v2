@@ -31,7 +31,7 @@ export default function Content() {
             I'm a rising sophomore from Bangkok, Thailand 🇹🇭 studying Computer
             Science at Northeastern University. I'm currently a software
             engineer intern at Agoda for Summer 2024. I love playing guitar,
-            basketball, and going to the gym.
+            basketball, going to the gym, and spending time with friends/family.
           </p>
 
           <ResponsiveMasonry columnsCountBreakPoints={{ 750: 2, 900: 3 }}>
@@ -42,7 +42,7 @@ export default function Content() {
               <img src={"./src/assets/tyme-pic2.png"} />
               <img src={"./src/assets/IMG_4923.JPG"} />
               <img src={"./src/assets/IMG_7072.JPG"} />
-              <img src={"./src/assets/IMG_5538.jpg"} />
+              <img src={"./src/assets/IMG_1788.JPG"} />
               <img src={"./src/assets/IMG_9844.JPG"} />
               <img src={"./src/assets/mocha1.png"} />
               <img src={"./src/assets/IMG_6785.JPG"} />
