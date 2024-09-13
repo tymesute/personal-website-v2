@@ -19,7 +19,7 @@ function App() {
       <Spotify />
       <hr className="hr" />
       <Contacts />
-      <hr className="hr" style={{ marginTop: "15px", marginBottom: "10px" }} />
+      <hr className="hr" style={{ marginTop: "16px", marginBottom: "10px" }} />
       <Footer />
     </>
   );
