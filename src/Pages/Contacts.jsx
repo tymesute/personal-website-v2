@@ -14,7 +14,7 @@ export default function Contacts() {
           target="_blank"
         >
           <img
-            src="./src/assets/instagram2.svg"
+            src="assets/instagram2.svg"
             alt="ig-logo"
             className="row-logo-img"
           />
@@ -29,7 +29,7 @@ export default function Contacts() {
           target="_blank"
         >
           <img
-            src="./src/assets/linkedin.svg"
+            src="assets/linkedin.svg"
             alt="linkedin-logo"
             className="row-logo-img"
           />
@@ -40,7 +40,7 @@ export default function Contacts() {
       <div className="row-logo">
         <a id="github-link" href="https://github.com/Tymeee" target="_blank">
           <img
-            src="./src/assets/github.svg"
+            src="assets/github.svg"
             alt="github-logo"
             className="row-logo-img"
           />
