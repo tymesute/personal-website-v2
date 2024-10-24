@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Collapsible from "react-collapsible";
 import ProjectDesc from "./projectdesc";
 
 export default function Projects() {
