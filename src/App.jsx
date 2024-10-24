@@ -1,9 +1,9 @@
-import NavBar from "./Pages/NavBar";
-import Content from "./Pages/Content";
-import Spotify from "./Pages/Spotify";
-import Projects from "./Pages/Projects";
-import Contacts from "./Pages/Contacts";
-import Footer from "./Pages/Footer";
+import NavBar from "./pages/navbar";
+import Content from "./pages/content";
+import Spotify from "./pages/spotify";
+import Projects from "./pages/projects";
+import Contacts from "./pages/contacts";
+import Footer from "./pages/footer";
 import "./index.css";
 
 function App() {

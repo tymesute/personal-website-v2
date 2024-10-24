@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Collapsible from "react-collapsible";
-import ProjectDesc from "./ProjectDesc";
+import ProjectDesc from "./projectdesc";
 
 export default function Projects() {
   const [isOpen1, setIsOpen1] = useState(true);
