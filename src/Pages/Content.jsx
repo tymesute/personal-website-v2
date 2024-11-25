@@ -28,9 +28,10 @@ export default function Content() {
             }}
           >
             I&apos;m a sophomore from Bangkok, Thailand 🇹🇭 studying Computer
-            Science at Northeastern University. I&apos;m currently a software
-            engineer intern at Agoda for Summer 2024. I love playing guitar,
-            basketball, going to the gym, and spending time with friends/family.
+            Science at Northeastern University. This past summer, I worked as a
+            software engineer intern at Agoda and SIX Network. I love playing
+            guitar, basketball, going to the gym, and spending time with
+            friends/family.
           </p>
 
           <ResponsiveMasonry columnsCountBreakPoints={{ 750: 2, 900: 3 }}>
