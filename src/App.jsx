@@ -1,8 +1,8 @@
 import NavBar from "./pages/navbar";
-import Content from "./pages/content";
+import Content from "./Pages/Content";
 import Spotify from "./pages/spotify";
 import Projects from "./pages/projects";
-import Contacts from "./pages/contacts";
+import Contacts from "./Pages/Contacts";
 import Footer from "./pages/footer";
 import "./index.css";
 

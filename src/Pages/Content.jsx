@@ -39,13 +39,13 @@ export default function Content() {
             }
             <Masonry gutter="10px">
               <img src="./src/assets/tyme-pic2.png" alt="tyme-pic2" />
-              <img src="./src/assets/img_4923.JPG" alt="img_4923" />
-              <img src="./src/assets/img_7072.JPG" alt="img_7072" />
-              <img src="./src/assets/img_1788.JPG" alt="img_1788" />
-              <img src="./src/assets/img_9844.JPG" alt="img_9844" />
+              <img src="./src/assets/img_4923.png" alt="img_4923" />
+              <img src="./src/assets/img_7072.png" alt="img_7072" />
+              <img src="./src/assets/img_1788.png" alt="img_1788" />
+              <img src="./src/assets/img_9844.png" alt="img_9844" />
               <img src="./src/assets/mocha1.png" alt="mocha1" />
-              <img src="./src/assets/img_6785.JPG" alt="img_6785" />
-              <img src="./src/assets/img_4836.JPG" alt="img_4836" />
+              <img src="./src/assets/img_6785.png" alt="img_6785" />
+              <img src="./src/assets/img_4836.png" alt="img_4836" />
               <img src="./src/assets/friends1.png" alt="friends1" />
             </Masonry>
           </ResponsiveMasonry>
