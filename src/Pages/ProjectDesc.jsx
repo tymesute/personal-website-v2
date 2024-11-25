@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import Collapsible from "react-collapsible";
 
 export default function ProjectDesc({
@@ -19,7 +19,6 @@ export default function ProjectDesc({
               isOpen ? "toggle-button-transform" : "toggle-button"
             }`}
           ></span>
-
           {title}
         </div>
       }
@@ -33,10 +32,26 @@ export default function ProjectDesc({
         </ul>
         {imageUrl && (
           <div className="image-container">
-            <img src={imageUrl} className="fixed-width-image" />
+            <img src={imageUrl} className="fixed-width-image" alt={title} />
           </div>
         )}
       </div>
     </Collapsible>
   );
 }
+
+// PropTypes validation
+ProjectDesc.propTypes = {
+  title: PropTypes.string.isRequired,
+  descriptions: PropTypes.arrayOf(PropTypes.string).isRequired,
+  imageUrl: PropTypes.string,
+  descriptionClass: PropTypes.string,
+  isOpen: PropTypes.bool.isRequired,
+  setIsOpen: PropTypes.func.isRequired,
+};
+
+// Default props
+ProjectDesc.defaultProps = {
+  descriptionClass: "description-ul",
+  imageUrl: null,
+};
