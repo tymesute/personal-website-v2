@@ -16,7 +16,7 @@ export default function Content() {
         <span>
           <Cursor cursorStyle="|" />
         </span>
-        {""}I'm Tyme 👋
+        {""}I&apos;m Tyme 👋
       </h1>
 
       <div className="row">
@@ -27,8 +27,8 @@ export default function Content() {
               paddingBottom: "35px",
             }}
           >
-            I'm a rising sophomore from Bangkok, Thailand 🇹🇭 studying Computer
-            Science at Northeastern University. I'm currently a software
+            I&apos;m a sophomore from Bangkok, Thailand 🇹🇭 studying Computer
+            Science at Northeastern University. I&apos;m currently a software
             engineer intern at Agoda for Summer 2024. I love playing guitar,
             basketball, going to the gym, and spending time with friends/family.
           </p>
@@ -38,15 +38,15 @@ export default function Content() {
               // implement mapping to image: https://cedricdelpoux.github.io/react-responsive-masonry/
             }
             <Masonry gutter="10px">
-              <img src="src/assets/tyme-pic2.png" />
-              <img src="src/assets/img_4923.JPG" />
-              <img src="src/assets/img_7072.JPG" />
-              <img src="src/assets/img_1788.JPG" />
-              <img src="src/assets/img_9844.JPG" />
-              <img src="src/assets/mocha1.png" />
-              <img src="src/assets/img_6785.JPG" />
-              <img src="src/assets/img_4836.JPG" />
-              <img src="src/assets/friends1.png" />
+              <img src="./src/assets/tyme-pic2.png" alt="tyme-pic2" />
+              <img src="./src/assets/img_4923.JPG" alt="img_4923" />
+              <img src="./src/assets/img_7072.JPG" alt="img_7072" />
+              <img src="./src/assets/img_1788.JPG" alt="img_1788" />
+              <img src="./src/assets/img_9844.JPG" alt="img_9844" />
+              <img src="./src/assets/mocha1.png" alt="mocha1" />
+              <img src="./src/assets/img_6785.JPG" alt="img_6785" />
+              <img src="./src/assets/img_4836.JPG" alt="img_4836" />
+              <img src="./src/assets/friends1.png" alt="friends1" />
             </Masonry>
           </ResponsiveMasonry>
         </div>
