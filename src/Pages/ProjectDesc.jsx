@@ -36,6 +36,7 @@ export default function ProjectDesc({
           </div>
         )}
       </div>
+      <hr className="hr-job-desc"></hr>
     </Collapsible>
   );
 }
