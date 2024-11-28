@@ -4,7 +4,7 @@ export default function Spotify() {
       <h1 className="heading-style">My Favorite Track Lately 🎧</h1>
       <iframe
         style={{ borderRadius: "12px" }}
-        src="https://open.spotify.com/embed/track/45J4avUb9Ni0bnETYaYFVJ?utm_source=generator&theme=0"
+        src="https://open.spotify.com/embed/track/4iQTpRoRZUvXRdgZtI3KUi?utm_source=generator&theme=0"
         width="100%"
         height="352"
         frameBorder="0"

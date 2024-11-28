@@ -124,7 +124,7 @@ export default function Projects() {
   return (
     <div>
       <h1 id="projects" className="heading-style">
-        Experience/Projects{" "}
+        Experience/Projects ✏️
       </h1>
       <p style={{ marginBottom: "10px", fontStyle: "italic" }}>Experience</p>
 
