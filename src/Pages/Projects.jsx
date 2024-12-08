@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ProjectDesc from "./projectdesc";
+import ProjectDesc from "./ProjectDesc";
 
 export default function Projects() {
   const [isOpen1, setIsOpen1] = useState(true);
