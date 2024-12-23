@@ -35,7 +35,7 @@ export default function Content() {
           <p
             className="p-style"
             style={{
-              paddingBottom: "30px",
+              paddingBottom: "20px",
             }}
           >
             I&apos;m a sophomore from Bangkok, Thailand 🇹🇭 studying Computer
