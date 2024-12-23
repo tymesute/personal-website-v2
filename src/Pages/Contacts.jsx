@@ -8,7 +8,7 @@ export default function Contacts() {
       <h1 id="contact" className="heading-style">
         Contact
       </h1>
-      <p>Let&apos;s get in touch!</p>
+      <p>Let&apos;s get in touchhhhhhhhhhhh!</p>
 
       <div className="row-logo">
         <a
