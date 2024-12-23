@@ -1,3 +1,7 @@
+import linkedinLogo from "/src/assets/linkedin.svg";
+import instagramLogo from "/src/assets/instagram2.svg";
+import githubLogo from "/Users/tymesuteesopon/personal-website-v2/src/assets/github.svg";
+
 export default function Contacts() {
   return (
     <div>
@@ -5,15 +9,17 @@ export default function Contacts() {
         Contact
       </h1>
       <p>Let&apos;s get in touch!</p>
+
       <div className="row-logo">
         <a
           id="insta-link"
           href="https://www.instagram.com/tymesute/"
           target="_blank"
+          rel="noreferrer"
         >
           <img
-            src="src/assets/instagram2.svg"
-            alt="ig-logo"
+            src={instagramLogo}
+            alt="Instagram logo"
             className="row-logo-img"
           />
           Instagram
@@ -25,10 +31,11 @@ export default function Contacts() {
           id="linkedin-link"
           href="https://www.linkedin.com/in/tsuteesopon/"
           target="_blank"
+          rel="noreferrer"
         >
           <img
-            src="src/assets/linkedin.svg"
-            alt="linkedin-logo"
+            src={linkedinLogo}
+            alt="LinkedIn logo"
             className="row-logo-img"
           />
           LinkedIn
@@ -36,12 +43,13 @@ export default function Contacts() {
       </div>
 
       <div className="row-logo">
-        <a id="github-link" href="https://github.com/Tymeee" target="_blank">
-          <img
-            src="src/assets/github.svg"
-            alt="github-logo"
-            className="row-logo-img"
-          />
+        <a
+          id="github-link"
+          href="https://github.com/Tymeee"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={githubLogo} alt="GitHub logo" className="row-logo-img" />
           Github
         </a>
       </div>

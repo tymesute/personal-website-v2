@@ -1,6 +1,17 @@
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
+// Import all images with absolute paths
+import tymePic2 from "/src/assets/tyme-pic2.png";
+import img4923 from "/src/assets/img_4923.png";
+import img7072 from "/src/assets/img_7072.png";
+import img1788 from "/src/assets/img_1788.png";
+import img9844 from "/src/assets/img_9844.png";
+import mocha1 from "/src/assets/mocha1.png";
+import img6785 from "/src/assets/img_6785.png";
+import img4836 from "/src/assets/img_4836.png";
+import friends1 from "/src/assets/friends1.png";
+
 export default function Content() {
   const [text] = useTypewriter({
     words: ["Hello,", "สวัสดีครับ"],
@@ -35,26 +46,19 @@ export default function Content() {
           </p>
 
           <ResponsiveMasonry columnsCountBreakPoints={{ 750: 2, 900: 3 }}>
-            {
-              // implement mapping to image: https://cedricdelpoux.github.io/react-responsive-masonry/
-            }
             <Masonry gutter="10px">
-              <img src="./src/assets/tyme-pic2.png" alt="tyme-pic2" />
-              <img src="./src/assets/img_4923.png" alt="img_4923" />
-              <img src="./src/assets/img_7072.png" alt="img_7072" />
-              <img src="./src/assets/img_1788.png" alt="img_1788" />
-              <img src="./src/assets/img_9844.png" alt="img_9844" />
-              <img src="./src/assets/mocha1.png" alt="mocha1" />
-              <img src="./src/assets/img_6785.png" alt="img_6785" />
-              <img src="./src/assets/img_4836.png" alt="img_4836" />
-              <img src="./src/assets/friends1.png" alt="friends1" />
+              <img src={tymePic2} alt="tyme-pic2" />
+              <img src={img4923} alt="img_4923" />
+              <img src={img7072} alt="img_7072" />
+              <img src={img1788} alt="img_1788" />
+              <img src={img9844} alt="img_9844" />
+              <img src={mocha1} alt="mocha1" />
+              <img src={img6785} alt="img_6785" />
+              <img src={img4836} alt="img_4836" />
+              <img src={friends1} alt="friends1" />
             </Masonry>
           </ResponsiveMasonry>
         </div>
-
-        {
-          // <img src={"./src/assets/tyme-pic2.png"} style={{ width: "38%" }} />
-        }
       </div>
     </div>
   );
