@@ -13,7 +13,6 @@ function App() {
       <Content />
       <hr className="hr" />
       <Projects />
-      <hr className="hr" />
       <Spotify />
       <hr className="hr" />
       <Contacts />

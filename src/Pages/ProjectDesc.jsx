@@ -10,37 +10,40 @@ export default function ProjectDesc({
   setIsOpen,
 }) {
   return (
-    <Collapsible
-      className="toggle-header"
-      trigger={
-        <div onClick={() => setIsOpen(!isOpen)}>
-          <span
-            className={`${
-              isOpen ? "toggle-button-transform" : "toggle-button"
-            }`}
-          ></span>
-          {title}
-        </div>
-      }
-      open={isOpen}
-    >
-      <div className="row">
-        <ul className={descriptionClass}>
-          {descriptions.map((description, index) => (
-            <li key={index}>{description}</li>
-          ))}
-        </ul>
-        {imageUrl && (
-          <div className="image-container">
-            <img src={imageUrl} className="fixed-width-image" alt={title} />
+    <div>
+      <Collapsible
+        className="toggle-header"
+        trigger={
+          <div onClick={() => setIsOpen(!isOpen)}>
+            <span
+              className={`${
+                isOpen ? "toggle-button-transform" : "toggle-button"
+              }`}
+            ></span>
+            {title}
           </div>
-        )}
-      </div>
+        }
+        open={isOpen}
+      >
+        <div className="row">
+          <ul className={descriptionClass}>
+            {descriptions.map((description, index) => (
+              <li key={index}>{description}</li>
+            ))}
+          </ul>
+          {imageUrl && (
+            <div className="image-container">
+              <img src={imageUrl} className="fixed-width-image" alt={title} />
+            </div>
+          )}
+        </div>
+      </Collapsible>
       <hr className="hr-job-desc"></hr>
-    </Collapsible>
+    </div>
   );
 }
 
+//
 // PropTypes validation
 ProjectDesc.propTypes = {
   title: PropTypes.string.isRequired,
