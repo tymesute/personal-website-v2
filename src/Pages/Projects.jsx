@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import ProjectDesc from "./ProjectDesc";
 
 // Import all images with absolute paths
-import sixNetworkLogo from "/src/assets/sixnetwork.png";
-import agodaLogo from "/src/assets/agoda.png";
-import chulaLogo from "/src/assets/chula.png";
-import withULogo from "/src/assets/withulogo.png";
-import covid19thLogo from "/src/assets/covid19th.png";
+import sixNetworkLogo from "/src/assets/sixnetworkver1.png";
+import agodaLogo from "/src/assets/agodaver1.png";
+import chulaLogo from "/src/assets/chulaver1.png";
+import withULogo from "/src/assets/withulogover1.png";
+import covid19thLogo from "/src/assets/covid19thver1.png";
 
 export default function Projects() {
   const [isOpen1, setIsOpen1] = useState(true);

@@ -1,6 +1,6 @@
-import linkedinLogo from "/src/assets/linkedin.svg";
-import instagramLogo from "/src/assets/instagram2.svg";
-import githubLogo from "/Users/tymesuteesopon/personal-website-v2/src/assets/github.svg";
+import linkedinLogo from "/src/assets/linkedinver1.svg";
+import instagramLogo from "/src/assets/instagram2ver1.svg";
+import githubLogo from "/Users/tymesuteesopon/personal-website-v2/src/assets/githubver1.svg";
 
 export default function Contacts() {
   return (

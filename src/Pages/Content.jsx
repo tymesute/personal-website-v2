@@ -2,15 +2,15 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 // Import all images with absolute paths
-import tymePic2 from "/src/assets/tyme-pic2.png?v=1";
-import img4923 from "/src/assets/img_4923.png?v=1";
-import img7072 from "/src/assets/img_7072.png?v=1";
-import img1788 from "/src/assets/img_1788.png?v=1";
-import img9844 from "/src/assets/img_9844.png?v=1";
-import mocha1 from "/src/assets/mocha1.png?v=1";
-import img6785 from "/src/assets/img_6785.png?v=1";
-import img4836 from "/src/assets/img_4836.png?v=1";
-import friends1 from "/src/assets/friends1.png?v=1";
+import tymePic2 from "/src/assets/tyme-pic2ver1.png";
+import img4923 from "/src/assets/img_4923ver1.png";
+import img7072 from "/src/assets/img_7072ver1.png";
+import img1788 from "/src/assets/img_1788ver1.png";
+import img9844 from "/src/assets/img_9844ver1.png";
+import mocha1 from "/src/assets/mocha1ver1.png";
+import img6785 from "/src/assets/img_6785ver1.png";
+import img4836 from "/src/assets/img_4836ver1.png";
+import friends1 from "/src/assets/friends1ver1.png";
 
 export default function Content() {
   const [text] = useTypewriter({
