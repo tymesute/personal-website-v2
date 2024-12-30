@@ -5,6 +5,7 @@ export default function Footer() {
         <p>&copy; 2024 Tyme Suteesopon. All rights reserved.</p>
         <a
           href="https://github.com/Tymeee/personal-website-v2"
+          target="_blank"
           style={{ display: "inline-block", paddingTop: "15px" }}
         >
           View Source
