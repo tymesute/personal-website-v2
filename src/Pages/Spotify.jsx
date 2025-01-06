@@ -4,11 +4,12 @@ export default function Spotify() {
       <h1
         className="heading-style"
         style={{
-          paddingTop: "2px",
+          paddingTop: "6px",
         }}
       >
-        I love music. Check this out.
+        More about me 👨‍💻
       </h1>
+      <p>I love music 🎵. Here's what I'm listening to.</p>
       <iframe
         style={{ borderRadius: "12px" }}
         src="https://open.spotify.com/embed/track/45J4avUb9Ni0bnETYaYFVJ?utm_source=generator&theme=0"
