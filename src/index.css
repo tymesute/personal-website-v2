@@ -22,7 +22,7 @@ hr {
 
 .hr-job-desc {
   margin-top: 8px;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .nav {
@@ -38,7 +38,7 @@ nav > a {
 
 .heading-style {
   font-weight: 550;
-  font-size: 220%;
+  font-size: 210%;
   height: 1px;
   padding-bottom: 45px;
 }

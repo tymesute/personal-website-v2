@@ -131,10 +131,8 @@ export default function Projects() {
   return (
     <div>
       <h1 id="projects" className="heading-style">
-        Experience ✏️
+        Experience 👨‍💻
       </h1>
-      <p style={{ marginBottom: "10px", fontStyle: "italic" }}>Experience</p>
-
       <div>
         {experiences.map((experience, index) => (
           <ProjectDesc
@@ -148,7 +146,8 @@ export default function Projects() {
         ))}
       </div>
 
-      <p style={{ marginBottom: "10px", fontStyle: "italic" }}>Projects</p>
+      {/* <p style={{ marginBottom: "10px", fontStyle: "italic" }}>Projects</p> */}
+      <h1 className="heading-style">Projects ✏️</h1>
 
       <div>
         {projects.map((project, index) => (

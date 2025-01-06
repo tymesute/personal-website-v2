@@ -7,7 +7,7 @@ export default function Spotify() {
           paddingTop: "6px",
         }}
       >
-        More about me 👨‍💻
+        More about me❗️
       </h1>
       <p>I love music 🎵. Here's what I'm listening to.</p>
       <iframe
